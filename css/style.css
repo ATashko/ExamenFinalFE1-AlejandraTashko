@@ -1,0 +1,605 @@
+*{
+    border: 0;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 500;
+    line-height: 2rem;
+    margin: 0;
+    padding: 0%;
+}
+
+body {
+    background-image: url(./imagenes/Nico\ Digital_files/illustration-intro.svg);
+    background-size: contain;
+}
+
+/*header menu de navegacion*/
+
+header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5vw;
+    margin-top: 5vw;
+    margin-right:10vw;
+    margin-left:10vw;
+}
+
+header nav ul {
+    color: #242E52;    
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    font-size:13px;
+    margin-left:1rem;
+}
+
+header nav ul li:hover {
+    color: #8497db;
+    cursor: pointer;
+}
+
+.buttonGetStarted {
+    background-color: #F3603B;
+    border-radius: 1.7rem;
+    box-shadow: 0px 4px rgba(242, 97, 59, 0.5);
+    color:#FFFFFF;
+    font-size: 13px;
+    height: 2.5rem;
+    width: 8rem;
+    text-align: center;
+}
+
+.buttonGetStarted:hover {
+    background-color: #f79a83;
+    color: #e2e1e1;
+    cursor: pointer;
+}
+
+#menu {
+    display:none;
+}
+/*Bring everyone together*/
+
+.bringEveryoneTogether {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:10rem;
+    margin-right:10vw;
+    margin-left:10vw;
+}
+
+
+.bringEveryoneTogether div h1 {
+    font-size:3.2rem;
+    font-weight: 700;
+    color: #232C50;
+    line-height:3.9rem;
+    margin-bottom: 2rem;
+    width: 35vw;
+    
+}
+
+.bringEveryoneTogether p {
+    padding-right: 16rem;
+    margin-bottom: 2rem;
+}
+
+/*What´s different*/
+
+.whatsDifferent {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10rem;
+    margin-right:10vw;
+    margin-left:10vw;
+}
+
+.whatsDifferent h2 {
+    font-size: 2.1rem;
+    color: #232C50;
+    line-height: 2.6rem;
+    margin-bottom: 2.5rem;
+}
+
+.whatsDifferent p {
+    color: #000000;
+    padding-right: 10rem;
+
+}
+
+.goals {
+    margin-top: 1rem;
+
+}
+.goals p span {
+    color: #323851;
+    font-weight:700;
+    
+}
+.goals p {
+    color:#B3B2B7;
+    margin-bottom:2.1rem;
+    margin-left: 10rem;
+    padding: 0;
+    position: relative;
+    
+}
+
+.goals p::before {
+    content:"01";
+    background-color: #F3603B;
+    border-radius: 1.7rem;
+    box-shadow: #a7442b;
+    color:#FFFFFF;
+    font-size: 13px;
+    padding: 0.5rem 1.5rem;
+    position: absolute;
+    left: -6rem;
+    text-align: center;
+
+}
+
+.goals p::before {
+    content:"01";
+    background-color: #F3603B;
+    border-radius: 1.7rem;
+    box-shadow: #a7442b;
+    color:#FFFFFF;
+    font-size: 13px;
+    padding: 0.5rem 1.5rem;
+    position: absolute;
+    left: -6rem;
+    text-align: center;
+
+}.goals p::before {
+    content:"02";
+    background-color: #F3603B;
+    border-radius: 1.7rem;
+    box-shadow: #a7442b;
+    color:#FFFFFF;
+    font-size: 13px;
+    padding: 0.5rem 1.5rem;
+    position: absolute;
+    left: -6rem;
+    text-align: center;
+
+}
+
+.goals p::before {
+    content:"03";
+    background-color: #F3603B;
+    border-radius: 1.7rem;
+    box-shadow: #a7442b;
+    color:#FFFFFF;
+    font-size: 13px;
+    padding: 0.5rem 1.5rem;
+    position: absolute;
+    left: -6rem;
+    text-align: center;
+
+}
+
+/*What they´ve said*/
+
+.whatTheyVeSaid {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right:5vw;
+    margin-left:5vw;
+    margin-bottom: 10rem;
+    
+}
+
+.whatTheyVeSaid h2{
+    color: #242E53;
+    font-size:2.1rem ;
+    margin-bottom: 5rem;
+}
+
+.profilesContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.profiles {
+    align-items: center;
+    background-color: #FAFAFA;
+    border-color: #FFFFFF;
+    border: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+
+.profiles span {
+    color: #242E52;
+    text-align: center;
+}
+
+.profiles p {
+    background-color: #FAFAFA;
+    color:#B9B9C1;
+    padding: 2rem;
+}
+
+.profiles img {
+    width: 5rem;
+    position: relative;
+    bottom: 2rem;
+}
+
+/*Simplify*/
+
+.footerOrangeBar {
+    align-items: center;
+    background-color: #F3603B;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem;
+}
+
+.footerOrangeBar button {
+    background-color: #FFFFFF;
+    border-radius: 1.7rem;
+    box-shadow: #140804;
+    color: #F3603B;
+    font-size: 13px;
+    height: 2.5rem;
+    width: 8rem;
+    text-align: center;
+}
+
+
+.footerOrangeBar button:hover {
+    background-color: #f79a83;
+    color: #e2e1e1;
+    cursor: pointer;
+}
+
+/*Footer Menu de Navegación*/
+
+.footerDarkBar {
+    background-color:#1E1E26 ;
+    align-items: center;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    padding: 4.5rem;
+    position: relative;
+}
+
+.logosContainer img {
+    margin-bottom: 3rem;
+}  
+
+.logosFooterSocial {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+    margin-top: 6.5rem;
+    margin-right:0.5rem;
+}
+
+.footerDarkBar nav li{
+    list-style-type: none;
+}
+
+.footerDarkBar nav li:hover {
+    color: #8497db;
+    cursor: pointer;
+}
+
+.navdetail {
+    margin-bottom: 2rem;
+}
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 25vw;
+}
+.rightContainer {
+    align-items: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.rightContainer div {
+    display: flex;
+    justify-content: space-between;
+    width: 23vw;
+}
+
+.rightContainer div form input {
+    border-radius: 1.7rem;
+    color: #A0A0A0;
+    font-size: 13px;
+    height: 2.5rem;
+    margin-bottom: 5rem;
+    padding-left: 1rem;
+    width: 14rem;
+
+}
+
+.rightContainer div button {
+    background-color: #F3603B;
+    border-radius: 1.7rem;
+    box-shadow: #a7442b;
+    color:#FFFFFF;
+    font-size: 13px;
+    height: 2.5rem;
+    width: 3.5rem;
+    text-align: center;
+
+}
+
+.rightContainer div button:hover{
+    background-color: #f79a83;
+    color: #e2e1e1;
+    cursor: pointer;
+}
+
+.footerDarkBar span {
+    color:#8C8C94;
+    font-size: 12px;
+    right: 10.8vw;
+    position: absolute;
+    top: 63%;
+}
+
+@media (max-width:375px) {
+    *{
+        margin:0;
+        padding:0;
+        border:0;
+    }
+
+    body{
+        width: 100vw;
+    }
+
+/*header menu de navegacion*/
+
+    header{
+        margin:5vw;
+        width: 100vw;
+    }
+
+    header img{
+        width: 35%;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header button {
+        
+        display: none;
+    }
+
+    #menu{
+        display: block;
+        font-size: 1.5rem;
+    }
+
+/*Bring everyone together*/
+
+    .bringEveryoneTogether {
+        align-items: center;
+        background-image: url(/imagenes/bg-simplify-section-mobile.svg);
+        background-repeat: repeat;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 5rem;
+    }
+
+    .bringEveryoneTogether img {
+        height: none;
+        margin-bottom: 2rem;
+        width: 100vw;
+    }
+
+    .bringEveryoneTogether div {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .bringEveryoneTogether div h1 {
+        font-size: 2.2rem;
+        line-height: 3rem;
+        padding: 0px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .bringEveryoneTogether div p {
+        color:#B9B9C1;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+/*What´s different*/
+
+    .whatsDifferent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .whatsDifferent h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .whatsDifferent div p{
+        font-size: 0.9rem;
+        color:#B9B9C1;
+        margin-bottom: 5rem;
+        padding: 0;
+        text-align: center;
+    }
+
+    .goals {
+        display: block;
+        margin:0;
+        text-align: left;
+    }
+
+    .goals p {
+        margin:0;
+        text-align: left;
+    }
+
+    .goals p span {
+        background-color: #fdd5cb;
+        text-align: right;
+        padding: 1rem;
+        
+        position:relative;
+        left:0.2rem;
+    }
+
+    .goals p::before{
+       display: none;
+    }
+/*What they´ve said*/
+
+    .whatTheyVeSaid {
+        margin-bottom: 3rem;
+    }
+
+    .profilesContainer {
+        align-items: center;
+        background-color: #FAFAFA;
+        border-color: #FFFFFF;
+        border: 2rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+
+    .profiles {
+        display: none;
+    }
+
+    #profiles {
+        display: flex;
+        height: 10rem;
+    }
+
+    
+    #profiles span {
+        color: #242E52;
+        text-align: center;
+    }
+    
+    #profiles p {
+        background-color: #FAFAFA;
+        color:#B9B9C1;
+        font-size: 13px;
+        line-height: 21px;
+        padding: 2rem;
+    }
+    
+    #profiles img {
+        width: 5rem;
+        position: relative;
+        bottom: 2rem;
+        
+    }
+
+/*Simplify*/
+
+    .footerOrangeBar {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 5rem;
+        padding-top: 6rem;
+    }
+
+    .footerOrangeBar h2 {
+        font-size: 2.3rem;
+        line-height: 2.8rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        width: 125%;
+    }
+
+/*Footer Menu de Navegación*/
+
+    .footerDarkBar {
+        align-items: center;
+        background-color:#1E1E26 ;
+        color: #FFFFFF;
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+        justify-content: space-around;
+        padding: 4.5rem;
+        position: relative;
+    }
+
+    .footerDarkBar span{
+        position: absolute;
+        top: 90%;
+        width: 68vw;
+    }
+
+
+    .logosContainer {
+        align-items: center;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        width: 100vw;
+    }  
+
+    .logosContainer img {
+        margin:10%;
+        width:50%;
+    }
+
+    .logosFooterSocial {
+        font-size: 2.6rem;
+        margin: 0.8rem;
+    }
+
+    .rightContainer {
+       position: relative;
+       right: 9rem;
+    }
+
+    .rightContainer div button {
+        margin-left: 1.3rem;
+        padding-left: 2rem;
+        padding-right: 3rem;
+    }
+
+    .rightContainer div form input{
+        margin-left: 1.2rem;
+        padding-left: 1.2rem;
+        width: 13rem;
+    }
+
+    .navContainer {
+        margin-bottom: 5rem;
+        width: 100%;
+    }
+
+
+   
+    
+}
