@@ -8,8 +8,10 @@
 }
 
 body {
-    background-image: url(./imagenes/Nico\ Digital_files/illustration-intro.svg);
-    background-size: contain;
+    background-image: url('./imagenes/bg-simplify-section-mobile.svg'), url ('./imagenes/bg-simplify-section-mobile.svg');
+    background-size: 50%;
+    background-position: 100% -12%, -50% 70%;
+    background-repeat: no-repeat, no-repeat;
 }
 
 /*header menu de navegacion*/
@@ -24,20 +26,26 @@ header {
     margin-left:10vw;
 }
 
+
+
+
 header nav ul {
     color: #242E52;    
     display: flex;
     list-style: none;
+    
 }
 
 header nav ul li {
     font-size:13px;
     margin-left:1rem;
+
 }
 
 header nav ul li:hover {
     color: #8497db;
     cursor: pointer;
+    
 }
 
 .buttonGetStarted {
@@ -48,7 +56,8 @@ header nav ul li:hover {
     font-size: 13px;
     height: 2.5rem;
     width: 8rem;
-    text-align: center;
+    
+
 }
 
 .buttonGetStarted:hover {
@@ -110,39 +119,40 @@ header nav ul li:hover {
 
 }
 
-.goals {
-    margin-top: 1rem;
 
-}
-.goals p span {
-    color: #323851;
-    font-weight:700;
-    
-}
-.goals p {
-    color:#B3B2B7;
+
+.paragraph {
+    color: #8C8C94;
+    font-weight: 400;
     margin-bottom:2.1rem;
     margin-left: 10rem;
-    padding: 0;
-    position: relative;
+    margin-top: 1.2rem;
+    width: 85%;
     
 }
 
-.goals p::before {
-    content:"01";
-    background-color: #F3603B;
-    border-radius: 1.7rem;
-    box-shadow: #a7442b;
-    color:#FFFFFF;
-    font-size: 13px;
-    padding: 0.5rem 1.5rem;
-    position: absolute;
-    left: -6rem;
-    text-align: center;
-
+.track {
+    color: #323851;
+    font-weight: 700;
+    margin-left: 10rem;
+    position: relative;
 }
 
-.goals p::before {
+.advance {
+    color: #323851;
+    font-weight: 700;
+    margin-left: 10rem;
+    position: relative;
+}
+
+.everything {
+    color: #323851;
+    font-weight: 700;
+    margin-left: 10rem;
+    position: relative;
+}
+
+.track::before {
     content:"01";
     background-color: #F3603B;
     border-radius: 1.7rem;
@@ -153,8 +163,9 @@ header nav ul li:hover {
     position: absolute;
     left: -6rem;
     text-align: center;
+}
 
-}.goals p::before {
+.advance::before {
     content:"02";
     background-color: #F3603B;
     border-radius: 1.7rem;
@@ -165,10 +176,9 @@ header nav ul li:hover {
     position: absolute;
     left: -6rem;
     text-align: center;
-
 }
 
-.goals p::before {
+.everything::before {
     content:"03";
     background-color: #F3603B;
     border-radius: 1.7rem;
@@ -179,7 +189,6 @@ header nav ul li:hover {
     position: absolute;
     left: -6rem;
     text-align: center;
-
 }
 
 /*What they´ve said*/
@@ -247,6 +256,8 @@ header nav ul li:hover {
     padding: 4rem;
 }
 
+
+
 .footerOrangeBar button {
     background-color: #FFFFFF;
     border-radius: 1.7rem;
@@ -255,7 +266,25 @@ header nav ul li:hover {
     font-size: 13px;
     height: 2.5rem;
     width: 8rem;
-    text-align: center;
+    text-align: center;text-align: center;
+    animation-iteration-count: infinite ;
+    animation-direction: alternate;
+    animation-duration: 1500ms;
+    animation-name: animando;
+
+    }
+     
+    
+    @keyframes animando {
+        0% {
+            width: 10%;
+        }
+        
+        100% {
+            width: 15%;
+            font-size: 17px;
+        }
+     
 }
 
 
@@ -286,6 +315,11 @@ header nav ul li:hover {
     font-size: 1.4rem;
     margin-top: 6.5rem;
     margin-right:0.5rem;
+}
+
+.logosFooterSocial:hover {
+    color: #F3603B;
+    cursor: pointer;
 }
 
 .footerDarkBar nav li{
@@ -370,10 +404,12 @@ header nav ul li:hover {
 
     header{
         margin:5vw;
-        width: 100vw;
+        position: absolute;
+        width: 80%;
     }
 
     header img{
+       
         width: 35%;
     }
 
@@ -389,6 +425,7 @@ header nav ul li:hover {
     #menu{
         display: block;
         font-size: 1.5rem;
+      
     }
 
 /*Bring everyone together*/
@@ -403,6 +440,7 @@ header nav ul li:hover {
     }
 
     .bringEveryoneTogether img {
+        margin-top: 5rem;
         height: none;
         margin-bottom: 2rem;
         width: 100vw;
@@ -451,29 +489,92 @@ header nav ul li:hover {
         text-align: center;
     }
 
-    .goals {
-        display: block;
-        margin:0;
-        text-align: left;
-    }
-
-    .goals p {
-        margin:0;
-        text-align: left;
-    }
-
-    .goals p span {
-        background-color: #fdd5cb;
-        text-align: right;
-        padding: 1rem;
+    
+    .paragraph {
+        color: #A0A0A0;
+        ;
+        font-size: 13px;
+        left: -15%;
+        margin: 0;
+        padding-top: 1rem;
+        padding-left: 1.5rem;
+        position: relative;
+        width: 90vw;
         
-        position:relative;
-        left:0.2rem;
     }
 
-    .goals p::before{
-       display: none;
+    .track {
+        align-items: center;
+        background-color: #ffe9e3;
+        display: inline-flex;
+        font-weight: 700;
+        margin: 0;
+        padding: 0.2rem;
+        padding-left: 3.2rem;
+        width: 100vw;
     }
+
+    .advance {
+        align-items: center;
+        background-color: #ffe9e3;
+        display: inline-flex;
+        font-weight: 700;
+        margin: 0;
+        padding: 0.2rem;
+        padding-left: 3.2rem;
+        width: 100vw;
+    }
+
+    .everything {
+        align-items: center;
+        background-color: #ffe9e3;
+        display: inline-flex;
+        font-weight: 700;
+        margin: 0;
+        padding: 0.2rem;
+        padding-left: 3.2rem;
+        width: 100vw;
+    }
+
+    .track::before {
+        content:"01";
+        background-color: #F3603B;
+        border-radius: 1.7rem;
+        box-shadow: #a7442b;
+        color:#FFFFFF;
+        font-size: 13px;
+        padding: 0.2rem 1.5rem;
+        position: absolute;
+        left: -1rem;
+        text-align: center;
+    }
+    
+    .advance::before {
+        content:"02";
+        background-color: #F3603B;
+        border-radius: 1.7rem;
+        box-shadow: #a7442b;
+        color:#FFFFFF;
+        font-size: 13px;
+        padding: 0.2rem 1.5rem;
+        position: absolute;
+        left: -1rem;
+        text-align: center;
+    }
+    
+    .everything::before {
+        content:"03";
+        background-color: #F3603B;
+        border-radius: 1.7rem;
+        box-shadow: #a7442b;
+        color:#FFFFFF;
+        font-size: 13px;
+        padding: 0.2rem 1.5rem;
+        position: absolute;
+        left: -1rem;
+        text-align: center;
+    }
+  
 /*What they´ve said*/
 
     .whatTheyVeSaid {
@@ -500,7 +601,6 @@ header nav ul li:hover {
         height: 10rem;
     }
 
-    
     #profiles span {
         color: #242E52;
         text-align: center;
@@ -538,6 +638,36 @@ header nav ul li:hover {
         width: 125%;
     }
 
+    .footerOrangeBar button {
+        background-color: #FFFFFF;
+        border-radius: 1.7rem;
+        box-shadow: #140804;
+        color: #F3603B;
+        font-size: 13px;
+        height: 2.5rem;
+        width: 8rem;
+        text-align: center;text-align: center;
+        animation-iteration-count: infinite ;
+        animation-direction: alternate;
+        animation-duration: 1500ms;
+        animation-name: animando;
+    
+        }
+         
+        
+        @keyframes animando {
+            0% {
+                width: 60%;
+            }
+            
+            100% {
+                width: 70%;
+                font-size: 17px;
+            }
+         
+    }
+    
+
 /*Footer Menu de Navegación*/
 
     .footerDarkBar {
@@ -573,7 +703,7 @@ header nav ul li:hover {
     }
 
     .logosFooterSocial {
-        font-size: 2.6rem;
+        font-size: 2.2rem;
         margin: 0.8rem;
     }
 
