@@ -8,11 +8,14 @@
 }
 
 body {
-    background-image: url('./imagenes/bg-simplify-section-mobile.svg'), url ('./imagenes/bg-simplify-section-mobile.svg');
-    background-size: 50%;
-    background-position: 100% -12%, -50% 70%;
+    
+    background-image: url(../imagenes/bg-tablet-pattern.svg), url(../imagenes/bg-tablet-pattern.svg);
+    background-position: 100% -12%, -56% 70%;
     background-repeat: no-repeat, no-repeat;
+    background-size: 700px;
+    margin: 0;
 }
+
 
 /*header menu de navegacion*/
 
@@ -26,26 +29,20 @@ header {
     margin-left:10vw;
 }
 
-
-
-
 header nav ul {
     color: #242E52;    
     display: flex;
     list-style: none;
-    
 }
 
 header nav ul li {
     font-size:13px;
     margin-left:1rem;
-
 }
 
 header nav ul li:hover {
     color: #8497db;
     cursor: pointer;
-    
 }
 
 .buttonGetStarted {
@@ -56,8 +53,6 @@ header nav ul li:hover {
     font-size: 13px;
     height: 2.5rem;
     width: 8rem;
-    
-
 }
 
 .buttonGetStarted:hover {
@@ -69,6 +64,8 @@ header nav ul li:hover {
 #menu {
     display:none;
 }
+
+
 /*Bring everyone together*/
 
 .bringEveryoneTogether {
@@ -80,7 +77,6 @@ header nav ul li:hover {
     margin-left:10vw;
 }
 
-
 .bringEveryoneTogether div h1 {
     font-size:3.2rem;
     font-weight: 700;
@@ -88,13 +84,13 @@ header nav ul li:hover {
     line-height:3.9rem;
     margin-bottom: 2rem;
     width: 35vw;
-    
 }
 
 .bringEveryoneTogether p {
     padding-right: 16rem;
     margin-bottom: 2rem;
 }
+
 
 /*What´s different*/
 
@@ -116,7 +112,6 @@ header nav ul li:hover {
 .whatsDifferent p {
     color: #000000;
     padding-right: 10rem;
-
 }
 
 
@@ -128,9 +123,9 @@ header nav ul li:hover {
     margin-left: 10rem;
     margin-top: 1.2rem;
     width: 85%;
-    
-}
-
+} 
+ 
+ 
 .track {
     color: #323851;
     font-weight: 700;
@@ -202,7 +197,6 @@ header nav ul li:hover {
     margin-right:5vw;
     margin-left:5vw;
     margin-bottom: 10rem;
-    
 }
 
 .whatTheyVeSaid h2{
@@ -245,6 +239,10 @@ header nav ul li:hover {
     bottom: 2rem;
 }
 
+#carrusel {
+    display: none;
+}
+
 /*Simplify*/
 
 .footerOrangeBar {
@@ -271,10 +269,8 @@ header nav ul li:hover {
     animation-direction: alternate;
     animation-duration: 1500ms;
     animation-name: animando;
-
     }
      
-    
     @keyframes animando {
         0% {
             width: 10%;
@@ -334,11 +330,13 @@ header nav ul li:hover {
 .navdetail {
     margin-bottom: 2rem;
 }
+
 .navContainer {
     display: flex;
     justify-content: space-between;
     width: 25vw;
 }
+
 .rightContainer {
     align-items: right;
     display: flex;
@@ -360,7 +358,6 @@ header nav ul li:hover {
     margin-bottom: 5rem;
     padding-left: 1rem;
     width: 14rem;
-
 }
 
 .rightContainer div button {
@@ -372,7 +369,6 @@ header nav ul li:hover {
     height: 2.5rem;
     width: 3.5rem;
     text-align: center;
-
 }
 
 .rightContainer div button:hover{
@@ -489,18 +485,16 @@ header nav ul li:hover {
         text-align: center;
     }
 
-    
     .paragraph {
         color: #A0A0A0;
-        ;
         font-size: 13px;
         left: -15%;
         margin: 0;
+        margin-bottom: 1rem;
         padding-top: 1rem;
         padding-left: 1.5rem;
         position: relative;
         width: 90vw;
-        
     }
 
     .track {
@@ -621,6 +615,12 @@ header nav ul li:hover {
         
     }
 
+    #carrusel {
+        display: block;
+        margin: 2rem;
+        width: 3rem;
+    }
+
 /*Simplify*/
 
     .footerOrangeBar {
@@ -728,8 +728,5 @@ header nav ul li:hover {
         margin-bottom: 5rem;
         width: 100%;
     }
-
-
-   
     
 }
